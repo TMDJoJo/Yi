@@ -1,4 +1,6 @@
 Yi
 ==
+My blade is yours.
 
-A software platform for scalable server-side and networking applications
+A software platform for scalable server-side and networking applications.
+
