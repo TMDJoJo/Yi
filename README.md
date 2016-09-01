@@ -2,6 +2,8 @@ Yi
 ==
 My blade is yours.
 
+[![Build Status](https://travis-ci.org/TMDJoJo/Yi.svg?branch=master)](https://travis-ci.org/TMDJoJo/Yi)
+
 ## TODO
 0. base lib
 1. option parser
