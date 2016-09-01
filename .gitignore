@@ -1,4 +1,8 @@
-.project
-pkg
-bin
-.settings
+*.opensdf
+*.sdf
+/Server/Bin/
+/Server/Win/
+!/Server/Win/*.sln
+!/Server/Win/*.vcxproj
+!/Server/Win/*.filters
+!/Server/Win/*.user
