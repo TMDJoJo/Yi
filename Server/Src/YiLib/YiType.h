@@ -2,6 +2,8 @@
 #define __YITYPE_H__
 #include "YiMacro.h"
 
+typedef bool                    ybool;
+
 typedef signed char             yint8;
 typedef unsigned char           yuint8;
 
@@ -16,5 +18,7 @@ typedef unsigned long long      yuint64;
 
 typedef float                   yfloat32;
 typedef double                  yfloat64;
+
+
 
 #endif //__YITYPE_H__
