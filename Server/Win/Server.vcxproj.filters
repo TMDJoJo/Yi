@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="YiLib">
+      <UniqueIdentifier>{cbc936b5-c32f-4afa-993f-de53e7e21dee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\YiLib\YiMacro.h">
+      <Filter>YiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\YiLib\YiType.h">
+      <Filter>YiLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\Server.cpp" />
+  </ItemGroup>
+</Project>
