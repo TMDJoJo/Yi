@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __YIMACRO_H__
 #define __YIMACRO_H__
 

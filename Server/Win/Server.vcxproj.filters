@@ -12,14 +12,17 @@
     <ClInclude Include="..\Src\YiLib\YiType.h">
       <Filter>YiLib</Filter>
     </ClInclude>
-    <ClInclude Include="..\Src\YiLib\YiThread.h">
+    <ClInclude Include="..\Src\YiLib\YiTime.h">
+      <Filter>YiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\YiLib\YiServer.h">
+      <Filter>YiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\YiLib\YiService.h">
       <Filter>YiLib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Src\Server.cpp" />
-    <ClCompile Include="..\Src\YiLib\YiThread.cpp">
-      <Filter>YiLib</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

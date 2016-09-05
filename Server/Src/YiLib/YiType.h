@@ -1,6 +1,8 @@
+#pragma once
 #ifndef __YITYPE_H__
 #define __YITYPE_H__
 #include "YiMacro.h"
+#include <string>
 
 typedef bool                    ybool;
 
@@ -19,6 +21,6 @@ typedef unsigned long long      yuint64;
 typedef float                   yfloat32;
 typedef double                  yfloat64;
 
-
+typedef std::string             ystring;
 
 #endif //__YITYPE_H__

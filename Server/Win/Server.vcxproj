@@ -110,13 +110,14 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Src\YiLib\YiService.h" />
     <ClInclude Include="..\Src\YiLib\YiMacro.h" />
-    <ClInclude Include="..\Src\YiLib\YiThread.h" />
+    <ClInclude Include="..\Src\YiLib\YiServer.h" />
+    <ClInclude Include="..\Src\YiLib\YiTime.h" />
     <ClInclude Include="..\Src\YiLib\YiType.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Src\Server.cpp" />
-    <ClCompile Include="..\Src\YiLib\YiThread.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
