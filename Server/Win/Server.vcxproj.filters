@@ -27,5 +27,8 @@
     <ClCompile Include="..\Src\YiLib\YiServer.cpp">
       <Filter>YiLib</Filter>
     </ClCompile>
+    <ClCompile Include="..\Src\YiLib\YiService.cpp">
+      <Filter>YiLib</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

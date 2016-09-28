@@ -6,20 +6,21 @@
 #include <condition_variable>
 #include <vector>
 #include <thread>
+#include "YiService.h"
 
 //class YiIService;
 
 class YiServer
 {
 public:
-    YiServer(yint8 max_threads);
-private:
-    YiServer(const YiServer&);  // delete
+    YiServer(YiServicePool* svcp, yint8 max_threads);
+	YiServer(const YiServer&) = delete;
 public:
     ybool Init();
     yint32 Run();
     ybool OnStart();
     ybool OnShutdown();
+
     //ybool RegestService(YiIService* service);
 private:
     void Tick();
@@ -30,6 +31,8 @@ private:
     std::vector<std::thread> _workers;
     yint8 _max_threads;
     ybool _ready;
+	ybool _shutdown;
+	YiServicePool* _service_pool;
 };
 
 #endif
