@@ -11,7 +11,6 @@ YiIService::YiIService(service_id id, ystring name, yuint32 interval_time_millis
 
 void YiIService::Tick()
 {
-	_elapse_time_millisecond += _interval_time_millisecond;
 	TickService();
 	std::cout << "tick " << std::this_thread::get_id() << std::endl;
 }

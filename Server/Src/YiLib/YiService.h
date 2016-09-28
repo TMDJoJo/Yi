@@ -24,7 +24,8 @@ public:
     static void Do(YiIService* self) {if(self != nullptr)self->Tick();}
 	virtual void TickService() = 0;
 private:
-	virtual void Tick();
+	void Invok() { _elapse_time_millisecond += _interval_time_millisecond; }
+	void Tick();
 private:
     ystring     _service_name;
     service_id  _service_id;

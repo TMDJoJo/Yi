@@ -1,6 +1,7 @@
 #include "YiServer.h"
 #include <iostream>
 #include <assert.h>
+#include <random>
 
 YiServer::YiServer(YiServicePool* svcp, yint8 max_threads):
 	_ready(false),
@@ -43,12 +44,17 @@ void YiServer::Tick()
 		YiIService* sv = nullptr;
 		while (nullptr == (sv = _service_pool->Top()))
 		{
-			std::this_thread::sleep_for(std::chrono::milliseconds(10));
+			std::random_device rd;
+			std::this_thread::sleep_for(std::chrono::milliseconds(rd() % 5));
 			_service_pool->Elapse(10);
 		}
-		_ready = true;
-		_cv.notify_one();
-		
+
+		{
+			std::unique_lock <std::mutex> lck(_mtx);
+			sv->Invok();
+			_ready = true;
+			_cv.notify_one();
+		}
 		sv->Tick();
 	}
 }
